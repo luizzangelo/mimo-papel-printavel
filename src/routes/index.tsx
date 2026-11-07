@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check, ImagePlus, ShieldCheck, Gift, Lock, ChevronDown, Star } from "lucide-react";
+import kitHero from "@/assets/kit-papelaria-digital-tons-pastel.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -141,7 +142,11 @@ function Index() {
           <h1 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl">
             +40 mil arquivos de papelaria <span className="text-primary">prontos para imprimir e vender</span>
           </h1>
-          <ImageSlot label="Mockup principal (abaixo da headline)" className="mx-auto mt-8 aspect-[4/3] w-full max-w-xl" />
+          <img
+            src={kitHero.url}
+            alt="Kit de papelaria digital em tons pastel: caixa com laço, notebook com as pastas dos arquivos, agenda, planner, cadernos e bloquinhos, com +40 mil arquivos prontos para imprimir e vender"
+            className="mx-auto mt-8 w-full max-w-2xl"
+          />
           <p className="mx-auto mt-8 max-w-xl text-lg text-muted-foreground">
             Agendas, planners, cadernos e muito mais para você criar produtos lindos e ter uma renda extra trabalhando de casa, sem criar nada do zero.
           </p>
