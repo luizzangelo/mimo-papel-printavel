@@ -297,21 +297,8 @@ function Index() {
         </div>
       </Section>
 
-      {/* Autora */}
-      <Section>
-        <Title kicker="Quem preparou este material">Feito por quem vive a papelaria</Title>
-        <div className="mx-auto grid max-w-3xl items-center gap-8 sm:grid-cols-[200px_1fr]">
-          <ImageSlot label="Sua foto" className="aspect-square rounded-full" />
-          <div>
-            <h3 className="text-2xl font-bold">[Seu nome]</h3>
-            <p className="text-sm font-semibold text-primary">Papeleira e empreendedora</p>
-            <p className="mt-3 text-muted-foreground">Mãe, empreendedora e apaixonada por papelaria. Reuni em um só lugar os arquivos que uso no meu dia a dia para ajudar outras mulheres a começarem seu próprio negócio em casa, com leveza e lucro.</p>
-          </div>
-        </div>
-      </Section>
-
       {/* Depoimentos */}
-      <Section className="bg-blush">
+      <Section>
         <Title kicker="100% de satisfação">Quem compra recomenda</Title>
         <div className="mb-6 flex justify-center gap-1 text-primary">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}</div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -323,7 +310,7 @@ function Index() {
       </Section>
 
       {/* FAQ */}
-      <Section>
+      <Section className="bg-blush">
         <Title>Dúvidas frequentes</Title>
         <div className="mx-auto grid max-w-2xl gap-3">
           {faqs.map((f) => <Faq key={f.q} {...f} />)}
