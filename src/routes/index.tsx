@@ -236,7 +236,7 @@ function Index() {
         <Title kicker="E não para por aí" sub="Materiais extras para colocar mais dinheiro no seu bolso, sem pagar nada a mais.">Você ainda recebe +7 bônus exclusivos</Title>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {bonuses.map((b, i) => (
-            <div key={b.t} className="flex flex-col rounded-3xl bg-card p-5">
+            <div key={b.t} className={`flex flex-col rounded-3xl bg-card p-5 ${i === bonuses.length - 1 ? "sm:col-span-2 sm:mx-auto sm:max-w-xs lg:col-span-1 lg:col-start-2 lg:max-w-none" : ""}`}>
               <img src={b.img} alt={b.t} className="w-full rounded-2xl" />
               <p className="mt-4 flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary"><Gift className="h-4 w-4" />Bônus #{i + 1}</p>
               <h3 className="mt-1 text-lg font-bold">{b.t}</h3>
