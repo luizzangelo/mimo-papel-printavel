@@ -95,13 +95,13 @@ const steps = [
 ];
 
 const bonuses = [
-  { t: "Calculadora de Lucro da Papeleira", d: "Planilha automática: informe o custo do papel, tinta, espiral e embalagem e receba sugestão de preço, lucro e margem. Feita no Excel, sem Canva.", v: "47" },
-  { t: "Catálogo Pronto para Vender pelo WhatsApp", d: "Catálogo em PDF com imagens dos produtos, organizado por categorias e códigos. É só enviar para suas clientes, sem precisar criar vitrine.", v: "67" },
-  { t: "Kit Venda Sem Aparecer", d: "50 legendas prontas, 30 mensagens para grupos de WhatsApp, textos para status e ideias de divulgação para quem tem vergonha de gravar vídeos.", v: "37" },
-  { t: "Coleção Renda Extra: 20 Produtos de Baixo Custo", d: "Bloquinhos, tags, lembrancinhas, marcadores e miniagendas para produzir e vender com pouco material.", v: "57" },
-  { t: "Calendário de Oportunidades 2027", d: "Datas comemorativas, o que produzir em cada mês e quando começar a divulgar para aproveitar cada oportunidade de venda.", v: "27" },
-  { t: "Manual de Impressão Sem Erros", d: "Guia ilustrado explicando como imprimir, escolher o papel, configurar tamanho, margem e frente e verso.", v: "37" },
-  { t: "Desafio Sua Primeira Encomenda", d: "Plano prático de 7 dias, sem vídeos, com checklist diário: escolher produtos, calcular preços, montar a vitrine, divulgar e atender as primeiras clientes.", v: "47" },
+  { t: "Calculadora de Lucro da Papeleira", d: "Planilha automática: informe o custo do papel, tinta, espiral e embalagem e receba sugestão de preço, lucro e margem. Feita no Excel, sem Canva.", v: "47", img: bonus01 },
+  { t: "Catálogo Pronto para Vender pelo WhatsApp", d: "Catálogo em PDF com imagens dos produtos, organizado por categorias e códigos. É só enviar para suas clientes, sem precisar criar vitrine.", v: "67", img: bonus02 },
+  { t: "Kit Venda Sem Aparecer", d: "50 legendas prontas, 30 mensagens para grupos de WhatsApp, textos para status e ideias de divulgação para quem tem vergonha de gravar vídeos.", v: "37", img: bonus03 },
+  { t: "Coleção Renda Extra: 20 Produtos de Baixo Custo", d: "Bloquinhos, tags, lembrancinhas, marcadores e miniagendas para produzir e vender com pouco material.", v: "57", img: bonus04 },
+  { t: "Calendário de Oportunidades 2027", d: "Datas comemorativas, o que produzir em cada mês e quando começar a divulgar para aproveitar cada oportunidade de venda.", v: "27", img: bonus05 },
+  { t: "Manual de Impressão Sem Erros", d: "Guia ilustrado explicando como imprimir, escolher o papel, configurar tamanho, margem e frente e verso.", v: "37", img: bonus06 },
+  { t: "Desafio Sua Primeira Encomenda", d: "Plano prático de 7 dias, sem vídeos, com checklist diário: escolher produtos, calcular preços, montar a vitrine, divulgar e atender as primeiras clientes.", v: "47", img: bonus07 },
 ];
 
 const faqs = [
@@ -237,7 +237,7 @@ function Index() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {bonuses.map((b, i) => (
             <div key={b.t} className="flex flex-col rounded-3xl bg-card p-5">
-              <ImageSlot label={`Imagem do bônus ${i + 1}`} className="aspect-[4/3]" />
+              <img src={b.img} alt={b.t} className="w-full rounded-2xl" />
               <p className="mt-4 flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary"><Gift className="h-4 w-4" />Bônus #{i + 1}</p>
               <h3 className="mt-1 text-lg font-bold">{b.t}</h3>
               <p className="mt-2 flex-1 text-sm text-muted-foreground">{b.d}</p>
