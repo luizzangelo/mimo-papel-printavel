@@ -2,6 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check, ImagePlus, ShieldCheck, Gift, Lock, ChevronDown, Star } from "lucide-react";
 import kitHero from "@/assets/kit-papelaria-digital-tons-pastel.png.asset.json";
+import bonus01 from "@/assets/bonus-01-calculadora-lucro.png.asset.json";
+import bonus02 from "@/assets/bonus-02-catalogo-whatsapp.png.asset.json";
+import bonus03 from "@/assets/bonus-03-venda-sem-aparecer.png.asset.json";
+import bonus04 from "@/assets/bonus-04-colecao-renda-extra.png.asset.json";
+import bonus05 from "@/assets/bonus-05-calendario-2027.png.asset.json";
+import bonus06 from "@/assets/bonus-06-manual-impressao.png.asset.json";
+import bonus07 from "@/assets/bonus-07-desafio-7-dias.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
