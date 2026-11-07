@@ -95,13 +95,13 @@ const steps = [
 ];
 
 const bonuses = [
-  { t: "Calculadora de Lucro da Papeleira", d: "Planilha automática: informe o custo do papel, tinta, espiral e embalagem e receba sugestão de preço, lucro e margem. Feita no Excel, sem Canva.", v: "47", img: bonus01 },
-  { t: "Catálogo Pronto para Vender pelo WhatsApp", d: "Catálogo em PDF com imagens dos produtos, organizado por categorias e códigos. É só enviar para suas clientes, sem precisar criar vitrine.", v: "67", img: bonus02 },
-  { t: "Kit Venda Sem Aparecer", d: "50 legendas prontas, 30 mensagens para grupos de WhatsApp, textos para status e ideias de divulgação para quem tem vergonha de gravar vídeos.", v: "37", img: bonus03 },
-  { t: "Coleção Renda Extra: 20 Produtos de Baixo Custo", d: "Bloquinhos, tags, lembrancinhas, marcadores e miniagendas para produzir e vender com pouco material.", v: "57", img: bonus04 },
-  { t: "Calendário de Oportunidades 2027", d: "Datas comemorativas, o que produzir em cada mês e quando começar a divulgar para aproveitar cada oportunidade de venda.", v: "27", img: bonus05 },
-  { t: "Manual de Impressão Sem Erros", d: "Guia ilustrado explicando como imprimir, escolher o papel, configurar tamanho, margem e frente e verso.", v: "37", img: bonus06 },
-  { t: "Desafio Sua Primeira Encomenda", d: "Plano prático de 7 dias, sem vídeos, com checklist diário: escolher produtos, calcular preços, montar a vitrine, divulgar e atender as primeiras clientes.", v: "47", img: bonus07 },
+  { t: "Calculadora de Lucro da Papeleira", d: "Planilha automática: informe o custo do papel, tinta, espiral e embalagem e receba sugestão de preço, lucro e margem. Feita no Excel, sem Canva.", v: "47", img: bonus01.url },
+  { t: "Catálogo Pronto para Vender pelo WhatsApp", d: "Catálogo em PDF com imagens dos produtos, organizado por categorias e códigos. É só enviar para suas clientes, sem precisar criar vitrine.", v: "67", img: bonus02.url },
+  { t: "Kit Venda Sem Aparecer", d: "50 legendas prontas, 30 mensagens para grupos de WhatsApp, textos para status e ideias de divulgação para quem tem vergonha de gravar vídeos.", v: "37", img: bonus03.url },
+  { t: "Coleção Renda Extra: 20 Produtos de Baixo Custo", d: "Bloquinhos, tags, lembrancinhas, marcadores e miniagendas para produzir e vender com pouco material.", v: "57", img: bonus04.url },
+  { t: "Calendário de Oportunidades 2027", d: "Datas comemorativas, o que produzir em cada mês e quando começar a divulgar para aproveitar cada oportunidade de venda.", v: "27", img: bonus05.url },
+  { t: "Manual de Impressão Sem Erros", d: "Guia ilustrado explicando como imprimir, escolher o papel, configurar tamanho, margem e frente e verso.", v: "37", img: bonus06.url },
+  { t: "Desafio Sua Primeira Encomenda", d: "Plano prático de 7 dias, sem vídeos, com checklist diário: escolher produtos, calcular preços, montar a vitrine, divulgar e atender as primeiras clientes.", v: "47", img: bonus07.url },
 ];
 
 const faqs = [
